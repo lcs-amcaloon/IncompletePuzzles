@@ -19,10 +19,33 @@ print("Enter tine length:")
 print("   ", terminator: "")
 let tineLength = Int(readLine()!)!
 
+var spacing = 0
+while true{
+    print("Enter Tine Spacing")
+    let inputGiven = readLine()!
+    guard let integerGiven = Int (inputGiven) else{
+        print("Integers Please")
+        continue
+    }
+    guard integerGiven > 0 else{
+        print("positive integers please")
+        continue
+    }
+    spacing = integerGiven
+    break
+}
+
+
 // Get tine spacing
-print("Enter tine spacing:")
+//print("Enter tine spacing:")
+//print("   ", terminator: "")
+//let spacing = Int(readLine()!)!
+
+
+//Get handle length
+print("Enter handle length")
 print("   ", terminator: "")
-let spacing = Int(readLine()!)!
+let handlelength = Int(readLine()!)!
 
 // OUTPUT
 
@@ -40,8 +63,23 @@ for _ in 1...tineLength {
         }
         
     }
+    
+    
+    
     // Go to next line of output
     print("")
 }
+//print top of handle
+for _ in 1...spacing * 2 + 3 {
+    print("*", terminator: "")
+}
 
 
+//print handle
+for _ in 1...handlelength {
+    for _ in 1...spacing + 1{
+        print (" ", terminator: "")
+    }
+    print("*")
+
+}
