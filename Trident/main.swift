@@ -16,9 +16,23 @@ print("=======")
 // INPUT
 
 // Get tine length
-print("Enter tine length:")
-print("   ", terminator: "")
-let tineLength = Int(readLine()!)!
+
+var tineLength = 0
+while true{
+    print("Enter Tine length")
+    let inputGiven1 = readLine()!
+    guard let integerGiven1 = Int (inputGiven1) else{
+        print("Integers Please")
+        continue
+    }
+    guard integerGiven1 > 0 else{
+        print("positive integers please")
+        continue
+    }
+    tineLength = integerGiven1
+    break
+}
+
 
 var spacing = 0
 while true{
@@ -44,9 +58,23 @@ while true{
 
 
 //Get handle length
-print("Enter handle length")
-print("   ", terminator: "")
-let handlelength = Int(readLine()!)!
+
+var handlelength = 0
+while true{
+    print("Enter handle length")
+    let inputGiven2 = readLine()!
+    guard let integerGiven2 = Int (inputGiven2) else{
+        print("Integers Please")
+        continue
+    }
+    guard integerGiven2 > 0 else{
+        print("positive integers please")
+        continue
+    }
+    handlelength = integerGiven2
+    break
+}
+
 
 // OUTPUT
 
@@ -75,7 +103,7 @@ for _ in 1...spacing * 2 + 3 {
     print("*", terminator: "")
 }
 
-
+print(" ")
 //print handle
 for _ in 1...handlelength {
     for _ in 1...spacing + 1{

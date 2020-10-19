@@ -21,9 +21,17 @@ let phrase = readLine()!
 
 // PROCESS AND OUTPUT
 // NOTE: Instead of an "if statement" using a different type of Swift structure to handle all the different possible cases...
+
 if phrase == "TA" {
     print("totally awesome")
 } else if phrase == "TTYL" {
     print("talk to you later")
     exit(0)
 }
+else if phrase == "TGIF"{
+    print("Thank God It's Friday")
+}
+else {
+    print("I don't know that phrase")
+}
+
