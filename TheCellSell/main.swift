@@ -17,7 +17,7 @@ print("=============")
 
 // Get daytime minutes
 print("Number of daytime minutes?")
-let day = Int(readLine()!)!
+var day = Int(readLine()!)!
 
 // Get evening minutes
 print("Number of evening minutes?")
@@ -60,6 +60,11 @@ print("Plan B costs \(b/100)$")
 
 if a > b {
     print("Plan B is cheapest.")
-} else {
+}
+else if a < b{
     print("Plan A is cheapest.")
+}
+
+else if a == b{
+    print("Plan A and B are equal")
 }

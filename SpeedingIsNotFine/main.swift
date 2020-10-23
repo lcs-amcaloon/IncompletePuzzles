@@ -14,7 +14,7 @@ print("Speeding Is Not Fine")
 print("====================")
 
 // INPUT
-var fine = "100$"
+var fine = 100
 // Ask for the speed limit
 print("What is the speed limit, in km/h? ", terminator: "")
 let limit = Int(readLine()!)!
@@ -34,11 +34,15 @@ if speed < limit {
 } else {
     //calculate fine
     if speed < limit + 20{
-        fine = "100$"
+        fine = 100
     }
     else if speed < limit + 30{
-        fine = "270$"
+        fine = 270
     }
     
     print("You are speeding and your fine is \(fine)")
 }
+
+//1-20 over = 100$
+//21-30 over = 270$
+//31-above over = 500$

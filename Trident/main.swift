@@ -18,7 +18,7 @@ print("=======")
 // Get tine length
 
 var tineLength = 0
-while true{
+while true {
     print("Enter Tine length")
     let inputGiven1 = readLine()!
     guard let integerGiven1 = Int (inputGiven1) else{
