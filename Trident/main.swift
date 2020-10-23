@@ -51,6 +51,23 @@ while true{
 }
 
 
+var spacing = 0
+while true{
+    print("Enter Tine Spacing")
+    let inputGiven = readLine()!
+    guard let integerGiven = Int (inputGiven) else{
+        print("Integers Please")
+        continue
+    }
+    guard integerGiven > 0 else{
+        print("positive integers please")
+        continue
+    }
+    spacing = integerGiven
+    break
+}
+
+
 // Get tine spacing
 //print("Enter tine spacing:")
 //print("   ", terminator: "")
@@ -103,7 +120,7 @@ for _ in 1...spacing * 2 + 3 {
     print("*", terminator: "")
 }
 
-print(" ")
+
 //print handle
 for _ in 1...handlelength {
     for _ in 1...spacing + 1{
