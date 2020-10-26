@@ -20,12 +20,14 @@ print("input shifty num: ")
 let n = Int(readLine()!)!
 
 // How many times should we shift?
-let k = 3
+print ("input how many times we should shift: ")
+let k = Int(readLine()!)!
 
 // PROCESS
 
 // Shift the given number "k" number of times
 
+var originalinput = n
 var output1 = n
 var output2 = n
 var output3 = n
@@ -34,7 +36,7 @@ output1 += n * 10
 output2 += n * 10 * 10
 output3 += n * 10 * 10 * 10
 
-var output = n + output1 + output2 + output3
+var output = originalinput + output1 + output2 + output3
 
 // OUTPUT
 print(output)
