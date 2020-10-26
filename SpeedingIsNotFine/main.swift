@@ -31,7 +31,8 @@ let speed = Int(readLine()!)!
 // See whether the driver is within the speed limit, and if they are not, see how much they are above the limit.
 if speed < limit {
     print("Congratulations, you are within the speed limit!")
-} else {
+}
+else {
     //calculate fine
     if speed < limit + 20{
         fine = 100
@@ -39,8 +40,11 @@ if speed < limit {
     else if speed < limit + 30{
         fine = 270
     }
+    else if speed > limit + 31{
+        fine = 500
+    }
     
-    print("You are speeding and your fine is \(fine)")
+    print("You are speeding and your fine is \(fine)$")
 }
 
 //1-20 over = 100$
