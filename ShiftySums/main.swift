@@ -34,7 +34,7 @@ output1 += n * 10
 output2 += n * 10 * 10
 output3 += n * 10 * 10 * 10
 
-var output =  + output1 + output2 + output3
+var output = n + output1 + output2 + output3
 
 // OUTPUT
 print(output)
